@@ -7,8 +7,8 @@
     "dev": "vite dev",
     "build": "vite build",
     "cloudflare:build": "vite build",
-    "cloudflare:preview": "npm run cloudflare:build && wrangler dev --config wrangler.jsonc",
-    "cloudflare:deploy": "npm run cloudflare:build && wrangler deploy --config wrangler.jsonc",
+    "cloudflare:preview": "npm run cloudflare:build && npx --yes wrangler@4.158.0 dev --config wrangler.jsonc",
+    "cloudflare:deploy": "npm run cloudflare:build && npx --yes wrangler@4.158.0 deploy --config wrangler.jsonc",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -96,7 +96,6 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "8.1.5",
-    "vitest": "^4.1.10",
-    "wrangler": "^4.53.0"
+    "vitest": "^4.1.10"
   }
 }
